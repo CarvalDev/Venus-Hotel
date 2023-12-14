@@ -1,0 +1,33 @@
+#cadastrar, #logar{
+    font-size: 18px;
+    color: #E48F4F ;
+    transition: color 0.5s;
+}
+#cadastrar:hover, #logar:hover{
+    cursor: pointer;
+    color: #e9e9e9;
+    
+}
+
+#fotoDoc{
+    
+}
+#btnDoc{
+   
+}
+#cadastro{
+    
+}
+
+@media (max-width:1000px){
+    #formCadastro{
+        width: 95vw !important;
+        height: 100% !important;
+    }
+    #cadastro{
+        height: 130% !important;
+    }
+    body{
+        height: 160vh !important;
+    }
+}

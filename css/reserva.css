@@ -1,0 +1,206 @@
+#fade {
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 80000000000;
+}
+#modal {
+    width: 50%; 
+    height: 90%; 
+    background-color: #D9D9D9; 
+    position: fixed;    
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    border-radius: 3%;
+    z-index: 90000000000000;
+}
+.fechar {
+    width: 6%;
+}
+#modal.hide, /* melhor para fazer animação, com display nao da para fazer*/
+#fade.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+#modal.hide { /*quando está escondido ele fica la em cima, top -0, e quando ele é ativado ele desce para o meio da tela; */
+    top: 0;
+}
+#fade, #modal {
+    transition: .5s; /*transicao da opacidade de 0 pra 1 em 0.5s segundos */
+    opacity: 1;
+    pointer-events: all;
+}
+
+.openModal {
+    width: 10%;
+    margin-right: 20px;
+    background-color:#3D3933;
+    color: orange;
+    transition: 500ms linear;
+}
+.openModal:hover {
+    transform: scale(1.1);
+    background-color: rgb(190, 130, 86);
+    color: white;
+    font-weight: bold;
+}  
+ 
+#catSele {
+    width: 40%;
+}
+#tituloM {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+#nomeSele {
+    width: 25%;
+    text-align: center;
+    background-color:#807676;
+}
+#descModal1 {
+    background-color: #C1AFAF;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+#aFoto {
+    width: 70%;
+}
+#ftQt {
+    height: 350px;
+    width: 100%;
+
+}
+#dtReserva {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#desc1 {
+    display: flex;
+    background-color: #D9D9D9;
+}
+#desc2 {
+    display: flex;
+    background-color: #D9D9D9;
+}
+#desc3 {
+    display: flex;
+    background-color: #D9D9D9;
+}
+#desc4 {
+    border-top: 2px solid black;
+    width: 80%;
+    align-self: center;
+}
+#desc1In {
+    color: gray;
+
+}
+#conteudo1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#conteudo2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#pagarBtnApaga{
+    display: none !important;
+}
+@media (max-width: 1300px) {
+    #modal {
+        width: 60%;
+    }
+}
+@media (max-width: 1100px) {
+    #modal {
+        width: 70%;
+    }
+}
+@media (max-width: 900px) {
+    #modal {
+        width: 97%;
+    }
+
+}
+@media (max-width: 650px) {
+    #catSele {
+        width: 80%;
+    }
+    #descModal1 {
+        background-color: #C1AFAF;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 70vh;
+    }
+    #aFoto {
+        width: 95%;
+    }
+    #ftQt {
+        height: 300px;
+        width: 100%;
+        
+    }
+    #dtReserva {
+        width: 100%;
+        flex-direction: row;
+        height: 100%;
+    }
+    #desc1 {
+        display: flex;
+        background-color: #D9D9D9;
+        height:30%;
+        margin-top:4px;
+    }
+    #desc2 {
+        display: flex;
+        background-color: #D9D9D9;
+        height: 35%;
+    }
+    #desc3 {
+        display: flex;
+        height: 35%;
+    }
+    #desc4 {
+        border-top: 1px solid black;
+        width: 80%;
+        align-self: center;
+    }
+    #conteudo1 {
+        flex-direction: row;
+        width: 100%;
+    }
+    #conteudo2 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+}
+@media (max-width: 500px) {
+    #tituloM {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    #nomeSele {
+        width: 40%;
+        text-align: center;
+        background-color:#807676;
+        align-self: baseline;
+        margin-left: 5px;
+    }
+    #catSele {
+    align-self: baseline;
+    margin-left: 5px;
+}
+}

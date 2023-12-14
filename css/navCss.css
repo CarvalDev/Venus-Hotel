@@ -1,0 +1,381 @@
+@font-face {
+    font-family: brush ;
+    src: url("../fonts/Sunshine.otf");
+}
+
+@font-face {
+    font-family: fonteNormal;
+    src: url("../fonts/Louis\ George\ Cafe\ Bold.ttf");
+}
+#closeBtn{
+    position: absolute;
+    right: 5%;
+    color: #fff;
+}
+*{
+    font-family: fonteNormal;
+}
+.nav-link{
+    color: #E9E9E9;
+    font-size: 20px;
+    background-color: #3D3933;
+    transition: border-bottom 1s;
+}
+
+
+.nav-link:hover{
+    border-color: #E48F4F;
+    border-bottom: #E48F4F 1px solid;
+    color: #E9E9E9;
+    
+
+}
+
+#ancoras{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width:50%;
+ 
+}
+
+#buttons{
+    width:30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#cadastrar{
+    width: 30%;
+    height: 40px;
+    border-radius: 10px;
+    border: #3D3933 solid 1px;
+    background-color: #E48F4F;
+    color: #E9E9E9;
+    transition: all 1s;
+}
+
+#entrar{
+    width: 30%;
+    height: 40px;
+    border-radius: 10px;
+    border: #E48F4F solid 1px;
+    background-color: #3D3933;
+    color: #E48F4F;
+    transition: all 1s;
+
+}
+#sobrenos{
+    width: 50%;
+    text-transform: uppercase;
+    height: 50px;
+    border-radius: 10px;
+    border: #E9E9E9 solid 1px;
+    background-color: transparent;
+    color: #E48F4F;
+    transition: all 1s;
+
+}
+
+#reservaBtn{
+    width: 30%;
+    text-transform: uppercase;
+    height: 50px;
+    border-radius: 10px;
+    border: #E48F4F solid 1px;
+    background-color: transparent;
+    color: #E48F4F;
+    transition: all 1s;
+
+}
+
+#reservaBtnCrud{
+    width: 30%;
+    text-transform: uppercase;
+    height: 50px;
+    border-radius: 10px;
+    border: #8d99ae solid 1px;
+    background-color: transparent;
+    color: #8d99ae;
+    transition: all 1s;
+
+}
+
+#reservaBtnCrud:hover{
+    background-color: #8d99ae;
+    border-color: #8d99ae;
+    color: #e9e9e9;
+}
+
+#reservaBtn:hover{
+    background-color: #023047;
+    border-color: #023047;
+    color: #e9e9e9;
+}
+
+
+#sobrenos:hover{
+    background-color: #E48F4F;
+    border-color: #E48F4F;
+    color: #E9E9E9;
+}
+#cadastrar:hover{
+    background-color: #3D3933;
+    border-color: #E9E9E9;
+    color: #E9E9E9;
+}
+
+#entrar:hover{
+    background-color: #E48F4F;
+    border-color: #3D3933;
+    color: #3D3933;
+}
+
+#imageFundoLogo{
+    
+    
+    
+    
+    
+}
+#initialMsg{
+    
+}
+
+#sobreNosArea{
+    
+}
+
+#quartos{
+    width: 100%;
+    height: 74vh;
+    border: none;
+    margin: 0;
+    background: url(../img/client/grega.png);
+   
+    background-position:100%;
+    
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#msgCel{
+    display: none;
+}
+#sobreNosArea{
+    height:59vh;
+    
+    
+}
+
+
+#reservaModal{
+    width: 50vw;
+    height: 90vh;
+    position: fixed;
+    margin: auto;
+    border: none;
+    outline: none;
+
+    
+}
+
+#reservaModal::backdrop{
+    backdrop-filter: blur(3px);
+}
+
+.imgCard{
+    background-position: 100%!important;
+    background-size: 100% 100%;
+    border-top-right-radius:15px ;
+    border-top-left-radius: 15px;
+    animation: fotoCard 10s infinite alternate !important;
+}
+
+#blocoSobreNos{
+    height: 85%;
+}
+#descricao{
+    height:20%
+}
+#espacoSobreNos{
+    height: 7.5%
+}
+
+#categoria{
+    height: 40%;
+    width: 40%;
+    outline: none;
+    border-radius: 5px;
+}
+
+.imagemFundo{
+    animation: fotoCarrosel 5s infinite alternate !important;
+    filter: brightness(33%) blur(2px);
+}
+
+.cardSobre{
+    background-color: #302D28;
+    border-radius: 15px;
+    transition: all 0.5s;
+    filter: drop-shadow(1px 1px 1px #e9e9e9);
+}
+.cardSobre:hover{
+    transform: scale(1.05);
+    
+}
+
+@media (max-width: 1000px) {
+    #ancoras{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #buttons{
+        background-color: #3D3933;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    #areaFoto{
+        width: 100% !important;
+       
+    }
+    .cardSobre{
+        height: 100% !important
+    }
+    #divFoto{
+        height: 50% !important;
+    }
+    #msgCel{
+        height: 50% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        margin-top: 5% ;
+    }
+    #titulo{
+        font-size: 1.5rem !important;
+        text-align: center !important;
+        width: 100%;
+        font-family: fonteNormal !important;
+    }
+    #foto{
+        display: block;
+        
+       
+        border: none;
+    }
+    #fundo{
+        height: 60% !important;
+    }
+    #sobrenos{
+        width: 80%;
+    }
+    #areaCel{
+        margin-top: 10% !important;
+        width: 95vh !important;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    #initialMsgArea{
+        width: 100% !important;
+        display: none !important;
+        height: 100% !important;
+        margin: 0;
+    }
+    #initialMsg{
+        display: none !important;
+        height: 100%;
+        width: 100%;
+        background-color: transparent;
+    }
+    #titulo{
+        font-size: 60px;
+        width: 100%;
+        text-align: center;
+
+    }
+    #sobreNosArea{
+       height: 160vh;
+    }
+    #blocoSobreNos{
+        height: 30%;
+        margin-bottom: 10px;
+    }
+   
+    #descricao{
+        height: 10%;
+    }
+    #espacoSobreNos{
+        height: 7%;
+        display: none;
+    }
+    .swiper-button-prev, .swiper-button-next{
+        display: none;
+    }
+    #reservaBtn{
+        width: 90% !important;
+    }
+    #categoria{
+        width: 80% !important;
+        height: 60%;
+    }
+    #reservaModal{
+        width: 100vw!important;
+        height: 130vh;
+    }
+    #contModal{
+        flex-direction: row-reverse !important;
+        height: 100vh !important;
+        width: 100% !important;
+    }
+    #fotoQuarto{
+       display: none !important;
+    }
+    #infos{
+        height: 80% !important; 
+        width: 100% !important;
+    }
+    #selectArea{
+        width: 100% !important;
+    }
+    #buttonModalArea{
+        width: 100% !important;
+    }
+    #imgQuarto{
+        height: 90% !important;
+        width: 100% !important;
+    }
+}
+
+@keyframes brilho{
+    from{
+        background-color: #302D28;
+    }to{
+        background-color: #3D3933;
+    }
+}
+
+@keyframes fotoCard{
+    from{
+        background-size: 100% 100% ;
+    }to{
+        background-size: 105% 105% ;
+    }
+}
+
+@keyframes fotoCarrosel{
+    from{
+        transform: scale(1);
+    }to{
+        transform: scale(1.02);
+    }
+}

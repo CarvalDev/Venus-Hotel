@@ -1,0 +1,58 @@
+#modal {
+    height: 60%;
+    width: 30vw !important;
+    background-color: #D9D9D9; 
+    position: fixed;    
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    padding: 2px;
+    border-radius: 3%;
+    z-index: 90000000000000;
+}
+#bordaI {
+    border: 3px solid #BE1717;
+    padding: 20px;
+    border-radius: 50%;
+}
+#fade {
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 80000000000;
+}
+#modal.hide, /* melhor para fazer animação, com display nao da para fazer*/
+#fade.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+#modal.hide { /*quando está escondido ele fica la em cima, top -0, e quando ele é ativado ele desce para o meio da tela; */
+    top: 0;
+}
+#fade, #modal {
+    transition: .5s; /*transicao da opacidade de 0 pra 1 em 0.5s segundos */
+    opacity: 1;
+    pointer-events: all;
+}
+
+#openModal {
+    width:5%;
+    margin-right: 20px;
+    background-color:#3D3933;
+    color: orange;
+    transition: 500ms linear;
+}
+#openModal:hover { 
+    transform: scale(1.05);
+    background-color: rgb(190, 130, 86);
+    color: white;
+    font-weight: bold;
+}  
+
+@media (max-width: 1000px) {
+#modal{
+    width: 95vw !important;
+}
+
+}
